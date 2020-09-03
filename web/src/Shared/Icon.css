@@ -1,0 +1,85 @@
+i.icon.chevron-right {
+    -webkit-mask-image: url(/svg/icon-chevron-right.svg);
+}
+
+i.badge.broken-screen {
+     background-image: url(/svg/badge-repair-broken-screen.svg);
+ }
+
+i.badge.poor-battery {
+     background-image: url(/svg/badge-repair-poor-battery.svg);
+ }
+
+i.badge.slow-software {
+     background-image: url(/svg/badge-repair-slow-software.svg);
+ }
+
+i.badge.android {
+     background-image: url(/svg/badge-device-android.svg);
+ }
+
+i.badge.ipad {
+     background-image: url(/svg/badge-device-ipad.svg);
+ }
+
+i.badge.iphone {
+     background-image: url(/svg/badge-device-iphone.svg);
+ }
+
+i.badge.facebook {
+     background-image: url(/svg/badge-social-facebook.svg);
+ }
+
+i.badge {
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    background: no-repeat center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+ul.badge-list  {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 40rem;
+}
+
+ul.badge-list li {
+    list-style: none;
+    flex-basis: 200px;
+}
+
+ul.badge-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+ul.badge-list a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-direction: row;
+}
+
+i.icon {
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    background: black no-repeat center;
+    background-size: contain;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+span + i.icon {
+    margin-left: .25em;
+}

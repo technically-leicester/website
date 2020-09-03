@@ -1,0 +1,64 @@
+input,
+label,
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+textarea {
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    font-size: 100%;
+    display: block;
+}
+
+.form-row {
+    padding: 1rem 0;
+    display: block;
+}
+
+label {
+    display: inline-block;
+    padding: .3rem .5rem;
+    width: inherit;
+    background-color: #d8d8d8;
+    color: black;
+    border: none;
+}
+
+.contact {
+    background-color: white;
+}
+
+textarea {
+    height: 12rem;
+    font-family: sans-serif;
+}
+
+span.validation {
+    color: #9a1111;
+}
+
+label + span.validation,
+label + span.information {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+input[type=submit] {
+    background-color: var(--color-action);
+    color: white;
+    text-decoration: none;
+    transition: background-color var(--duration-link-off);
+    font-family: inherit;
+}
+
+input[type=submit]:hover {
+    background-color: var(--color-action-hover);
+    transition: background-color var(--duration-link-on);
+}

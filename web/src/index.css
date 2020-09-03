@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow&display=swap');
+
+
+html {
+  font-size: 100%;
+
+  --duration-link-on: 150ms;
+  --duration-link-off: 300ms;
+
+  --color-main: #D849C1;
+  --color-alternative: #86FB73;
+
+  --font-title: 'Abel', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+}
+
+span.description {
+  display: none;
+}
+
+div.container {
+  padding: 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+div.container.narrow {
+  max-width: 32rem;
+}
+
+a.inline:hover {
+  text-decoration: underline;
+}
+
+a.action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+body {
+  background-color: white;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333;
+  margin: 0;
+}
+
+p {margin-bottom: 1.15rem;}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: var(--font-title);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.802em;
+}
+
+h2 {font-size: 1.602em;}
+
+h3 {font-size: 1.424em;}
+
+h4 {font-size: 1.266em;}
+
+h5 {font-size: 1.125em;}
+
+small, .text_small {font-size: 0.889em;}
