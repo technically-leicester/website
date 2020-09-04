@@ -13,4 +13,4 @@ const content = async () => {
   }
 }
 
-export default content
+export default { content }
