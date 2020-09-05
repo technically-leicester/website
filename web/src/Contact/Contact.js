@@ -7,7 +7,9 @@ import { emailValidation } from '../Utils/validation'
 export default ({ heading, privacy }) => {
   const { register, handleSubmit, errors } = useForm()
   const [hasSubmitted, setSubmitted] = useState()
+  const [submitting, setSubmitting] = useState(false)
   const onSubmit = async data => {
+    setSubmitting(true)
     await axios.post('/api/feedback', {
       ...data
     })
@@ -19,6 +21,16 @@ export default ({ heading, privacy }) => {
         <div className="container narrow">
           <h2>Thank you</h2>
           <p>Your feedback has been sent.</p>
+        </div>
+      </section>
+    )
+  }
+  if (submitting) {
+    return (
+      <section className="contact">
+        <div className="container narrow">
+          <h2>{ heading }</h2>
+          <p>Sending feedback...</p>
         </div>
       </section>
     )
