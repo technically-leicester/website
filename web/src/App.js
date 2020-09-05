@@ -45,24 +45,14 @@ function App() {
     <section className="follow-us">
       <div className="container narrow">
         <ul>
+          { content.links && content.links.map(link => (
           <li>
-            <a href="/">
-              <i className="icon instagram" />
-              <span className="description">Instagram</span>
+            <a href={link.url}>
+              <i className={`icon ${link.slug}`} />
+              <span className="description">{link.slug}</span>
             </a>
           </li>
-          <li>
-            <a href="/">
-              <i className="icon twitter" />
-              <span className="description">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <i className="icon email" />
-              <span className="description">Email</span>
-            </a>
-          </li>
+          ))}
         </ul>
       </div>
     </section>

@@ -6,10 +6,15 @@ const content = async () => {
     'content',
     { contentHeading: 'content_heading' },
     { feedbackHeading: 'feedback_heading' },
-    { feedbackPrivacy: 'feedback_privacy' }
+    { feedbackPrivacy: 'feedback_privacy' },
+    'links'
   ).select().table('content')
   if (results.length > 0) {
-    return results[0]
+    const result = results[0]
+    return {
+      ...result,
+      links: JSON.parse(result.links)
+    }
   }
 }
 
