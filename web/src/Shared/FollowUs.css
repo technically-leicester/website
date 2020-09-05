@@ -1,0 +1,31 @@
+.follow-us {
+  background-color: var(--color-main);
+  color: var(--color-alternative);
+}
+
+.follow-us .container {
+  display: flex;
+  justify-content: center;
+}
+
+.follow-us ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.follow-us li {
+  margin: 0 .5rem;
+  padding: 0;
+}
+
+.follow-us h2 {
+  margin: 0 1rem 0 0;
+}
+
+.follow-us a,
+.follow-us i {
+  display: block;
+  line-height: 0;
+}

@@ -22,6 +22,10 @@ textarea {
     display: block;
 }
 
+.form-row p {
+    margin: 0;
+}
+
 label {
     display: inline-block;
     padding: .3rem .5rem;
@@ -51,11 +55,13 @@ label + span.information {
 }
 
 input[type=submit] {
-    background-color: var(--color-action);
-    color: white;
+    background-color: var(--color-main);
+    color: var(--color-alternative);
     text-decoration: none;
     transition: background-color var(--duration-link-off);
     font-family: inherit;
+    width: inherit;
+    padding: .5rem 1rem;
 }
 
 input[type=submit]:hover {

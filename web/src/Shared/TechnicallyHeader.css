@@ -1,0 +1,37 @@
+.technically-header {
+  background-color: var(--color-main);
+  color: var(--color-alternative);
+  padding: 8vw 0;
+}
+
+.technically-header h1,
+.technically-header h2 {
+  color: var(--color-alternative);
+}
+
+.technically-header .tagline {
+  font-size: 1.802em;
+  margin: 0;
+}
+
+.technically-header .logo {
+  margin: 0;
+  width: 33%;
+  background-image: url(/svg/technically-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  padding-top: 33%;
+}
+
+.technically-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technically-footer {
+  background-color: black;
+  color: #cccccc;
+  text-align: center;
+}

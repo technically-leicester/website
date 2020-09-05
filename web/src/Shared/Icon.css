@@ -1,34 +1,14 @@
-i.icon.chevron-right {
-    -webkit-mask-image: url(/svg/icon-chevron-right.svg);
+i.icon.twitter {
+    -webkit-mask-image: url(/svg/icon-twitter.svg);
 }
 
-i.badge.broken-screen {
-     background-image: url(/svg/badge-repair-broken-screen.svg);
- }
+i.icon.instagram {
+    -webkit-mask-image: url(/svg/icon-instagram.svg);
+}
 
-i.badge.poor-battery {
-     background-image: url(/svg/badge-repair-poor-battery.svg);
- }
-
-i.badge.slow-software {
-     background-image: url(/svg/badge-repair-slow-software.svg);
- }
-
-i.badge.android {
-     background-image: url(/svg/badge-device-android.svg);
- }
-
-i.badge.ipad {
-     background-image: url(/svg/badge-device-ipad.svg);
- }
-
-i.badge.iphone {
-     background-image: url(/svg/badge-device-iphone.svg);
- }
-
-i.badge.facebook {
-     background-image: url(/svg/badge-social-facebook.svg);
- }
+i.icon.email {
+    -webkit-mask-image: url(/svg/icon-email.svg);
+}
 
 i.badge {
     display: block;
@@ -71,13 +51,19 @@ ul.badge-list a span {
 
 i.icon {
     display: inline-block;
-    width: .75rem;
-    height: .75rem;
-    background: black no-repeat center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--color-alternative) no-repeat center;
     background-size: contain;
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
+    transition: background-color var(--duration-link-off);
+}
+
+a:hover i.icon {
+    background: var(--color-alternative-hover) no-repeat center;
+    transition: background-color var(--duration-link-on);
 }
 
 span + i.icon {

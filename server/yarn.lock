@@ -71,13 +71,6 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@koa/cors@2":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@koa/cors/-/cors-2.2.3.tgz#c32a9907acbee1e72fedfb0b9ac840d2e6f9be57"
-  integrity sha512-tCVVXa39ETsit5kGBtEWWimjLn1sDaeu8+0phgb8kT3GmBDZOykkI3ZO8nMjV2p3MGkJI4K5P+bxR8Ztq0bwsA==
-  dependencies:
-    vary "^1.1.2"
-
 "@koa/router@8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@koa/router/-/router-8.0.2.tgz#46a48d58cb0d76dc7a3735f14d1e66bbe2116575"
@@ -1597,6 +1590,13 @@ knex@^0.21.1:
     uuid "^7.0.3"
     v8flags "^3.1.3"
 
+koa-accesslog@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/koa-accesslog/-/koa-accesslog-1.0.0.tgz#febc4efae957d25e727b65d8463e444519de69eb"
+  integrity sha512-drpakus6DsxCW7mh05O8zmwTTUMGe63o1PMPrz4+6ytypt0UCLRjgpj4AapxxXPWV1nOpcz1YtNP57QbKLfY0w==
+  dependencies:
+    moment "^2.26.0"
+
 koa-compose@^3.0.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-3.2.1.tgz#a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7"
@@ -1815,6 +1815,11 @@ mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
+moment@^2.26.0:
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
+  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
 
 ms@2.0.0:
   version "2.0.0"

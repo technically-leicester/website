@@ -13,4 +13,13 @@ const content = async () => {
   }
 }
 
-export default { content }
+const feedback = async ({ name, email, message }) => {
+  await database('feedback').insert({
+    name,
+    email,
+    message,
+    created_on: database.fn.now()
+  })
+}
+
+export default { content, feedback }
