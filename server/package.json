@@ -16,7 +16,7 @@
     "koa-accesslog": "^1.0.0",
     "koa-joi-router": "^6.0.2",
     "mysql": "^2.18.1",
-    "nodemailer": "^6.4.8"
+    "nodemailer": "^6.4.16"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
